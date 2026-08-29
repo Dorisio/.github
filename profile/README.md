@@ -1,164 +1,40 @@
-# Dorisio Organization
+# Dorisio
 
-Welcome to **Dorisio** — Creator Tipping Infrastructure built on Stellar blockchain.
+Open-source creator payout infrastructure on Stellar for markets legacy platforms don't serve. Embeddable tipping SDK plus a reference app — direct wallet-to-wallet USDC settlement, on-chain earnings creators can prove, no platform cut.
 
-## 🎯 Mission
+## Repos
 
-Enable creators worldwide to receive instant USDC payments from fans across any platform, removing payment friction and geographic barriers.
+- **[backend](https://github.com/Dorisio/backend-)** — API, auth, Stellar transaction orchestration · Fastify / Postgres / Redis
+- **[sdk](https://github.com/Dorisio/sdk)** — Typed client + React hooks, embeddable in any platform · TypeScript
+- **[frontend](https://github.com/Dorisio/frontend)** — Reference implementation (profiles, tip flow, dashboard) · Next.js / Tailwind
 
-## 📦 Repositories
+## Architecture
 
-Dorisio is organized as three independent, tightly-integrated repositories:
+frontend → sdk → backend → Stellar
 
-### 1. [Backend](https://github.com/Dorisio/backend-)
-
-**Core system of intelligence and infrastructure**
-
-- REST API for all operations
-- User authentication and creator management
-- Payment orchestration and Stellar integration
-- PostgreSQL database + Redis caching
-- Source of truth for all business rules
-
-**Tech:** Fastify, Node.js, TypeScript, PostgreSQL, Redis, Stellar SDK
-
----
-
-### 2. [SDK](https://github.com/Dorisio/sdk)
-
-**Clean abstraction layer for developers**
-
-- Type-safe client library wrapping backend APIs
-- Framework-agnostic core (works with any JavaScript framework)
-- Optional React hooks for seamless integration
-- Utility functions for wallet, transaction, validation operations
-- Npm package for easy integration into third-party apps
-
-**Tech:** TypeScript, Stellar SDK, Zod, React (optional)
-
----
-
-### 3. [Frontend](https://github.com/Dorisio/frontend)
-
-**User-facing web application**
-
-- Landing page and user onboarding
-- Creator profile pages and dashboards
-- Send tip flow (minimal UI, maximum simplicity)
-- Creator earnings dashboard
-- Responsive design with Tailwind CSS
-
-**Tech:** Next.js, React, TypeScript, Tailwind CSS, Framer Motion, TanStack Query
-
----
-
-## 🏗️ Architecture
-
-```
-Frontend (Next.js)
-    ↓
-SDK (TypeScript abstraction)
-    ↓
-Backend (Fastify)
-    ↓
-Stellar Blockchain
-```
-
-## 🚀 Quick Start
-
-### Clone all repos
+## Quick start
 
 ```bash
-git clone https://github.com/Dorisio/backend-.git backend
-git clone https://github.com/Dorisio/sdk.git sdk
-git clone https://github.com/Dorisio/frontend.git frontend
-```
-
-### Install dependencies
-
-```bash
-cd backend && npm install
+git clone https://github.com/Dorisio/backend-.git backend && cd backend && npm install
 cd ../sdk && npm install
 cd ../frontend && npm install
 ```
 
-### Setup backend database
+Requires Node 20+, Postgres 14+, Redis 6+.
 
-```bash
-cd backend
-npm run prisma:generate
-npm run prisma:migrate
-```
+## Status
 
-### Start development
+- ✅ Auth, creator profiles, wallet linking
+- � Payments domain (tip transactions, Stellar settlement)
+- 🚧 SDK React hooks
+- 🚧 Frontend tip flow + dashboard
+- 📋 Testnet deployment
 
-```bash
-# Terminal 1: Backend
-cd backend && npm run dev
+## Principles
 
-# Terminal 2: SDK
-cd sdk && npm run build --watch
-
-# Terminal 3: Frontend
-cd frontend && npm run dev
-```
-
-## 📋 Prerequisites
-
-- **Node.js** 20+ LTS
-- **PostgreSQL** 14+
-- **Redis** 6+
-
-## 🔧 Key Design Principles
-
-### Contract-First Development
-
-- Backend defines API contracts first
-- SDK wraps those contracts
-- Frontend consumes stabilized SDK
-
-### Separation of Concerns
-
-- **Backend** = All logic, auth, payments, business rules
-- **SDK** = Translation layer, validation helpers, utilities
-- **Frontend** = Experience only, calls SDK, zero business logic
-
-### Repo Independence
-
-- Each repo builds, tests, deploys independently
-- No hidden cross-repo coupling at runtime
-
-## 📚 Documentation
-
-Each repo has comprehensive documentation:
-
-- **Backend:** [backend/README.md](https://github.com/Dorisio/backend-) — API contracts, database schema, development guide
-- **SDK:** [sdk/README.md](https://github.com/Dorisio/sdk) — API reference, usage examples, React hooks
-- **Frontend:** [frontend/README.md](https://github.com/Dorisio/frontend) — Component structure, state management
-
-## 🛠️ Code Standards
-
-All repos follow these standards:
-
-- **TypeScript:** Strict mode enabled
-- **Formatting:** Prettier (100 char line width)
-- **Linting:** ESLint with TypeScript plugin
-- **Testing:** Vitest for unit/integration tests
-- **Validation:** Zod schemas for runtime type safety
-
-## 🌟 Key Features
-
-- ✅ Instant USDC payments via Stellar
-- ✅ Multi-platform creator profiles (X, Instagram, TikTok, YouTube, GitHub, Twitch)
-- ✅ No geographic barriers or regional restrictions
-- ✅ Low transaction fees powered by Stellar
-- ✅ Simple onboarding for creators and fans
-- ✅ Creator dashboard with earnings tracking
-- ✅ Developer-friendly SDK for integrations
-- ✅ Type-safe TypeScript throughout
+Contract-first (backend defines the API, SDK wraps it, frontend consumes it). SDK stays framework-agnostic so it's usable outside this org's own frontend.
 
 ---
 
 **Built with ❤️ by the Dorisio team**
-
 Join us in making creator support frictionless, global, and accessible.
