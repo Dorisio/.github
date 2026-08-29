@@ -36,5 +36,4 @@ Contract-first (backend defines the API, SDK wraps it, frontend consumes it). SD
 
 ---
 
-**Built with ❤️ by the Dorisio team**
 Join us in making creator support frictionless, global, and accessible.
