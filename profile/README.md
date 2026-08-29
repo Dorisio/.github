@@ -1,6 +1,6 @@
-# TipForge Organization
+# Dorisio Organization
 
-Welcome to **TipForge** — Creator Tipping Infrastructure built on Stellar blockchain.
+Welcome to **Dorisio** — Creator Tipping Infrastructure built on Stellar blockchain.
 
 ## 🎯 Mission
 
@@ -8,9 +8,9 @@ Enable creators worldwide to receive instant USDC payments from fans across any 
 
 ## 📦 Repositories
 
-TipForge is organized as three independent, tightly-integrated repositories:
+Dorisio is organized as three independent, tightly-integrated repositories:
 
-### 1. [Backend](https://github.com/TipForge/backend-)
+### 1. [Backend](https://github.com/Dorisio/backend-)
 
 **Core system of intelligence and infrastructure**
 
@@ -24,7 +24,7 @@ TipForge is organized as three independent, tightly-integrated repositories:
 
 ---
 
-### 2. [SDK](https://github.com/TipForge/sdk)
+### 2. [SDK](https://github.com/Dorisio/sdk)
 
 **Clean abstraction layer for developers**
 
@@ -38,7 +38,7 @@ TipForge is organized as three independent, tightly-integrated repositories:
 
 ---
 
-### 3. [Frontend](https://github.com/TipForge/frontend)
+### 3. [Frontend](https://github.com/Dorisio/frontend)
 
 **User-facing web application**
 
@@ -69,9 +69,9 @@ Stellar Blockchain
 ### Clone all repos
 
 ```bash
-git clone https://github.com/TipForge/backend-.git backend
-git clone https://github.com/TipForge/sdk.git sdk
-git clone https://github.com/TipForge/frontend.git frontend
+git clone https://github.com/Dorisio/backend-.git backend
+git clone https://github.com/Dorisio/sdk.git sdk
+git clone https://github.com/Dorisio/frontend.git frontend
 ```
 
 ### Install dependencies
@@ -132,9 +132,9 @@ cd frontend && npm run dev
 
 Each repo has comprehensive documentation:
 
-- **Backend:** [backend/README.md](https://github.com/TipForge/backend-) — API contracts, database schema, development guide
-- **SDK:** [sdk/README.md](https://github.com/TipForge/sdk) — API reference, usage examples, React hooks
-- **Frontend:** [frontend/README.md](https://github.com/TipForge/frontend) — Component structure, state management
+- **Backend:** [backend/README.md](https://github.com/Dorisio/backend-) — API contracts, database schema, development guide
+- **SDK:** [sdk/README.md](https://github.com/Dorisio/sdk) — API reference, usage examples, React hooks
+- **Frontend:** [frontend/README.md](https://github.com/Dorisio/frontend) — Component structure, state management
 
 ## 🛠️ Code Standards
 
@@ -159,6 +159,6 @@ All repos follow these standards:
 
 ---
 
-**Built with ❤️ by the TipForge team**
+**Built with ❤️ by the Dorisio team**
 
 Join us in making creator support frictionless, global, and accessible.
