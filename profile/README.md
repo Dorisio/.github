@@ -4,8 +4,6 @@
 
 Open-source creator payout infrastructure on Stellar for markets legacy platforms don't serve. Embeddable tipping SDK plus a reference app — direct wallet-to-wallet USDC settlement, on-chain earnings creators can prove, no platform cut.
 
-Open-source creator payout infrastructure on Stellar for markets legacy platforms don't serve. Embeddable tipping SDK plus a reference app — direct wallet-to-wallet USDC settlement, on-chain earnings creators can prove, no platform cut.
-
 ## Repos
 
 - **[backend](https://github.com/Dorisio/backend)** — API, auth, Stellar transaction orchestration · Fastify / Postgres / Redis
@@ -28,11 +26,11 @@ Requires Node 20+, Postgres 14+, Redis 6+.
 
 ## Status
 
-- ✅ Auth, creator profiles, wallet linking
-- � Payments domain (tip transactions, Stellar settlement)
-- 🚧 SDK React hooks
-- 🚧 Frontend tip flow + dashboard
-- 📋 Testnet deployment
+- Auth, creator profiles, wallet linking
+- Payments domain (tip transactions, Stellar settlement)
+- SDK React hooks
+- Frontend tip flow + dashboard
+- Testnet deployment
 
 ## Principles
 
