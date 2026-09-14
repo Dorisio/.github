@@ -1,10 +1,14 @@
 # Dorisio
 
+![Dorisio Hero](./Hero.png)
+
+Open-source creator payout infrastructure on Stellar for markets legacy platforms don't serve. Embeddable tipping SDK plus a reference app — direct wallet-to-wallet USDC settlement, on-chain earnings creators can prove, no platform cut.
+
 Open-source creator payout infrastructure on Stellar for markets legacy platforms don't serve. Embeddable tipping SDK plus a reference app — direct wallet-to-wallet USDC settlement, on-chain earnings creators can prove, no platform cut.
 
 ## Repos
 
-- **[backend](https://github.com/Dorisio/backend-)** — API, auth, Stellar transaction orchestration · Fastify / Postgres / Redis
+- **[backend](https://github.com/Dorisio/backend)** — API, auth, Stellar transaction orchestration · Fastify / Postgres / Redis
 - **[sdk](https://github.com/Dorisio/sdk)** — Typed client + React hooks, embeddable in any platform · TypeScript
 - **[frontend](https://github.com/Dorisio/frontend)** — Reference implementation (profiles, tip flow, dashboard) · Next.js / Tailwind
 
